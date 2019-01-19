@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projet Sahel</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/pop_up.css">
+    <link rel="stylesheet" href="../static/json-viewer.css">
+    <script src="../static/js/json-viewer.js"></script>
+</head>
+
+<body id="reportsPage">
+    <div id="start">
+        <div><input type="text" value="" id="do_res"></div>
+        <div><button id="activate">DO</button></div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id="div_close">
+                    <h2>Effectuee une recherche</h2>
+                </div>
+            </div>
+        <div class="modal-body">
+            <div id="conteneur">
+                <div class="element" id="ele1" style="background:white">@utilisateur</div>
+                <div class="element" id="ele2" style="background:white">#hastag</div>
+            </div>
+            <button id="do_search">get tweets</button>
+            <button id="do_relation">get relation</button>
+        </div> 
+        <div class="modal-footer">
+        <h3></h3>
+        </div>
+        </div>
+    </div>
+    <div id="ret">
+        <p id="para"></p>
+    </div>
+    <div id="jsoncontainer"></div>
+    <script src="../static/js/pop_up.js"></script>
+</body>
+</html>
